@@ -42,10 +42,11 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="CLS\Conexion.cs" />
+        <Compile Include="CLS\Query.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
     <ItemGroup>
-      <Folder Include="CLS" />
       <Folder Include="GUI" />
     </ItemGroup>
     <ItemGroup>
