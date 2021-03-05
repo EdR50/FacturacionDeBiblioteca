@@ -8,3 +8,13 @@ C:\Users\Ed501\RiderProjects\library\library\obj\Debug\library.csproj.CoreCompil
 C:\Users\Ed501\RiderProjects\library\library\obj\Debug\library.exe
 C:\Users\Ed501\RiderProjects\library\library\obj\Debug\library.pdb
 C:\Users\Ed501\RiderProjects\library\library\obj\Debug\library.Login.resources
+D:\Archivos\Documentos\Proyecto\library\bin\Debug\library.exe.config
+D:\Archivos\Documentos\Proyecto\library\bin\Debug\library.exe
+D:\Archivos\Documentos\Proyecto\library\bin\Debug\library.pdb
+D:\Archivos\Documentos\Proyecto\library\obj\Debug\library.csprojAssemblyReference.cache
+D:\Archivos\Documentos\Proyecto\library\obj\Debug\library.Login.resources
+D:\Archivos\Documentos\Proyecto\library\obj\Debug\library.Properties.Resources.resources
+D:\Archivos\Documentos\Proyecto\library\obj\Debug\library.csproj.GenerateResource.cache
+D:\Archivos\Documentos\Proyecto\library\obj\Debug\library.csproj.CoreCompileInputs.cache
+D:\Archivos\Documentos\Proyecto\library\obj\Debug\library.exe
+D:\Archivos\Documentos\Proyecto\library\obj\Debug\library.pdb
