@@ -18,3 +18,4 @@ D:\Archivos\Documentos\Proyecto\library\obj\Debug\library.csproj.GenerateResourc
 D:\Archivos\Documentos\Proyecto\library\obj\Debug\library.csproj.CoreCompileInputs.cache
 D:\Archivos\Documentos\Proyecto\library\obj\Debug\library.exe
 D:\Archivos\Documentos\Proyecto\library\obj\Debug\library.pdb
+D:\Archivos\Documentos\Proyecto\library\obj\Debug\library.GUI.Splash.resources
