@@ -10,7 +10,7 @@ namespace DataManager.CLS
         {
         }
 
-        private int ExecuteQuery(string queryTxt)
+        private int ExecuteQuery(string queryTxt)   
         {
             var rowsAffected = 0;
 
