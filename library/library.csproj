@@ -67,6 +67,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -95,6 +98,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\DataManager\DataManager.csproj">
+      <Project>{68778815-fe8d-48cb-9e0f-5b51463a579b}</Project>
+      <Name>DataManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SessionManager\SessionManager.csproj">
+      <Project>{23e47753-7528-48b5-9e5c-fb194412f7c8}</Project>
+      <Name>SessionManager</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

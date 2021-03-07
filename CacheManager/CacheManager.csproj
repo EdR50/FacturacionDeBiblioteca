@@ -41,6 +41,12 @@
         <Compile Include="CLS\Cache.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\DataManager\DataManager.csproj">
+        <Project>{68778815-fe8d-48cb-9e0f-5b51463a579b}</Project>
+        <Name>DataManager</Name>
+      </ProjectReference>
+    </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
          Other similar extension points exist, see Microsoft.Common.targets.

@@ -24,7 +24,7 @@ namespace DataManager.CLS
             return rowsAffected;
         }
 
-        private DataTable ExecuteSelectQuery(string selectQuery)
+        public DataTable ExecuteSelectQuery(string selectQuery)
         {
             MySqlDataAdapter adapter = new MySqlDataAdapter();
             DataTable table = new DataTable();

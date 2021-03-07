@@ -1,41 +1,36 @@
 ﻿using library.GUI;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace library.CLS
 {
     class AppManager : ApplicationContext
     {
-    
-        private Boolean SplashScreen()
+        private bool SplashScreen()
         {
-            Boolean Result = true;
-            Splash s = new Splash();
-            s.ShowDialog();
-
-            return Result;
+            // bool result = true;
+            var splash = new Splash();
+            splash.ShowDialog();
+            return true;
         }
 
-        private Boolean LoginScreen()
+        private bool LoginScreen()
         {
-            Boolean Result = true;
-            Login l = new Login();
-            l.ShowDialog();
-            return Result;
+            bool result = true;
+            Login login = new Login();
+            login.ShowDialog();
+            result = login.Validated;
+            return result;
         }
+
         public AppManager()
         {
             if (SplashScreen())
             {
                 if (LoginScreen())
                 {
-                    Home h = new Home();
-                    h.ShowDialog();
-                    
+                    var home = new Home();
+                    home.ShowDialog();
                 }
             }
         }

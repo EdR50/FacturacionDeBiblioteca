@@ -10,7 +10,7 @@ namespace library
     static class Program
     {
         /// <summary>
-        /// The main entry point for the application.
+        /// La clase principal donde se inicia la app
         /// </summary>
         [STAThread]
         static void Main()

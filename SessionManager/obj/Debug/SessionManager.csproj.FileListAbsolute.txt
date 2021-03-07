@@ -1,0 +1,13 @@
+C:\Users\Ed501\RiderProjects\library\SessionManager\bin\Debug\SessionManager.dll
+C:\Users\Ed501\RiderProjects\library\SessionManager\bin\Debug\SessionManager.pdb
+C:\Users\Ed501\RiderProjects\library\SessionManager\obj\Debug\SessionManager.csprojAssemblyReference.cache
+C:\Users\Ed501\RiderProjects\library\SessionManager\obj\Debug\SessionManager.csproj.CoreCompileInputs.cache
+C:\Users\Ed501\RiderProjects\library\SessionManager\obj\Debug\SessionManager.dll
+C:\Users\Ed501\RiderProjects\library\SessionManager\obj\Debug\SessionManager.pdb
+C:\Users\Ed501\RiderProjects\library\SessionManager\bin\Debug\CacheManager.dll
+C:\Users\Ed501\RiderProjects\library\SessionManager\bin\Debug\DataManager.dll
+C:\Users\Ed501\RiderProjects\library\SessionManager\bin\Debug\MySql.Data.dll
+C:\Users\Ed501\RiderProjects\library\SessionManager\bin\Debug\CacheManager.pdb
+C:\Users\Ed501\RiderProjects\library\SessionManager\bin\Debug\DataManager.pdb
+C:\Users\Ed501\RiderProjects\library\SessionManager\bin\Debug\DataManager.dll.config
+C:\Users\Ed501\RiderProjects\library\SessionManager\obj\Debug\SessionManager.csproj.CopyComplete

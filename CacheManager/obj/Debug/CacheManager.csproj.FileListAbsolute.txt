@@ -1,0 +1,11 @@
+C:\Users\Ed501\RiderProjects\library\CacheManager\bin\Debug\CacheManager.dll
+C:\Users\Ed501\RiderProjects\library\CacheManager\bin\Debug\CacheManager.pdb
+C:\Users\Ed501\RiderProjects\library\CacheManager\bin\Debug\DataManager.dll
+C:\Users\Ed501\RiderProjects\library\CacheManager\bin\Debug\MySql.Data.dll
+C:\Users\Ed501\RiderProjects\library\CacheManager\bin\Debug\DataManager.pdb
+C:\Users\Ed501\RiderProjects\library\CacheManager\bin\Debug\DataManager.dll.config
+C:\Users\Ed501\RiderProjects\library\CacheManager\obj\Debug\CacheManager.csprojAssemblyReference.cache
+C:\Users\Ed501\RiderProjects\library\CacheManager\obj\Debug\CacheManager.csproj.CoreCompileInputs.cache
+C:\Users\Ed501\RiderProjects\library\CacheManager\obj\Debug\CacheManager.csproj.CopyComplete
+C:\Users\Ed501\RiderProjects\library\CacheManager\obj\Debug\CacheManager.dll
+C:\Users\Ed501\RiderProjects\library\CacheManager\obj\Debug\CacheManager.pdb
