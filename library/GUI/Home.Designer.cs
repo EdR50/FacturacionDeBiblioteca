@@ -382,7 +382,7 @@ namespace library.GUI
             this.searchBar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.searchBar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.searchBar.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.searchBar.Location = new System.Drawing.Point(736, 137);
+            this.searchBar.Location = new System.Drawing.Point(737, 134);
             this.searchBar.Multiline = true;
             this.searchBar.Name = "searchBar";
             this.searchBar.Size = new System.Drawing.Size(394, 42);
@@ -392,7 +392,7 @@ namespace library.GUI
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.label1.Location = new System.Drawing.Point(476, 142);
+            this.label1.Location = new System.Drawing.Point(466, 150);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(215, 37);
             this.label1.TabIndex = 7;
@@ -402,7 +402,7 @@ namespace library.GUI
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 27F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.label3.Location = new System.Drawing.Point(476, 65);
+            this.label3.Location = new System.Drawing.Point(476, 49);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(215, 46);
             this.label3.TabIndex = 5;

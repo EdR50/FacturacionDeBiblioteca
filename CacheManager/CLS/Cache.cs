@@ -45,5 +45,24 @@ namespace CacheManager.CLS
 
             return table;
         }
+
+
+        public static DataTable UserInfo(string userName)
+        {
+            var table = new DataTable();
+            var sqlQuery = $"SELECT * FROM usuario WHERE NombreUsuario = '{userName}'";
+            var queryHandler = new DataManager.CLS.Query();
+
+            try
+            {
+                table = queryHandler.ExecuteSelectQuery(sqlQuery);
+            }
+            catch (Exception e)
+            {
+                table = new DataTable();
+            }
+
+            return table;
+        }
     }
 }

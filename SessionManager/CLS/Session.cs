@@ -41,7 +41,7 @@ namespace SessionManager.CLS
             }
         }
 
-        // Metodo login para comprobar la sesion
+        // Metodo login para comprobar la sesion(consumiendo)
         public bool Login(string username, string password)
         {
             bool authorized;
@@ -56,7 +56,6 @@ namespace SessionManager.CLS
                     IdUser = table.Rows[0]["IdUsuario"].ToString();
                     Username = table.Rows[0]["NombreUsuario"].ToString();
                     Password = table.Rows[0]["Contrasena"].ToString();
-
                     authorized = true;
                 }
                 else

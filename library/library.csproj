@@ -99,6 +99,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CacheManager\CacheManager.csproj">
+      <Project>{b59590bd-8551-49e9-b6d8-b1d2eea83ebb}</Project>
+      <Name>CacheManager</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DataManager\DataManager.csproj">
       <Project>{68778815-fe8d-48cb-9e0f-5b51463a579b}</Project>
       <Name>DataManager</Name>

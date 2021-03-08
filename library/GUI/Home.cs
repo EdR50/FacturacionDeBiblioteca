@@ -15,11 +15,26 @@ namespace library.GUI
         public Home()
         {
             InitializeComponent();
+            
         }
 
         private void Home_Load(object sender, EventArgs e)
         {
-            
+            RenderInfoBook();
         }
+        
+        
+        //Mostrar lista de libros
+        private void RenderInfoBook()
+        {
+            var bookInfo = CacheManager.CLS.Cache.RenderInfoBooks();
+            
+
+            // Mostrando los libros en la tabla
+            dataGridView1.AutoGenerateColumns = false;
+            dataGridView1.DataSource = bookInfo;
+        }
+        
+        
     }
 }
