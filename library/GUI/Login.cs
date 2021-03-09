@@ -32,8 +32,6 @@ namespace library.GUI
                 if (_validated)
                 {
                     Close();
-                    MessageBox.Show(@"lets go!");
-                    MessageBox.Show($@"ID del usuario: {Session.IdUser} {Session.Username}{Session.Password} ");
                 }
                 else
                 {
@@ -43,7 +41,6 @@ namespace library.GUI
             catch (Exception e)
             {
                 Console.WriteLine(e);
-                throw;
             }
         }
 

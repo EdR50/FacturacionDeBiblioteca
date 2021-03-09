@@ -21,6 +21,7 @@ namespace library.GUI
         private void Home_Load(object sender, EventArgs e)
         {
             RenderInfoBook();
+            RenderUserInfo();
         }
         
         
@@ -33,6 +34,13 @@ namespace library.GUI
             // Mostrando los libros en la tabla
             dataGridView1.AutoGenerateColumns = false;
             dataGridView1.DataSource = bookInfo;
+        }
+
+        //Mostrar informacion del usuario actual en la sesion.
+        private void RenderUserInfo()
+        {
+            usernameDisplay.Text = SessionManager.CLS.Usuario.NombreUsuario;
+            emDisplay.Text = SessionManager.CLS.Usuario.Email;
         }
         
         

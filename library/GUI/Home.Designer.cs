@@ -58,7 +58,7 @@ namespace library.GUI
             this.perfilToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cerrarSesionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dirDisplay = new System.Windows.Forms.Label();
+            this.emDisplay = new System.Windows.Forms.Label();
             this.usernameDisplay = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.searchBar = new System.Windows.Forms.TextBox();
@@ -92,7 +92,7 @@ namespace library.GUI
             this.MenuNav.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (247)))), ((int) (((byte) (247)))), ((int) (((byte) (247)))));
             this.MenuNav.Controls.Add(this.panel2);
             this.MenuNav.Controls.Add(this.panel1);
-            this.MenuNav.Controls.Add(this.dirDisplay);
+            this.MenuNav.Controls.Add(this.emDisplay);
             this.MenuNav.Controls.Add(this.usernameDisplay);
             this.MenuNav.Controls.Add(this.pictureBox1);
             this.MenuNav.Location = new System.Drawing.Point(0, 1);
@@ -344,16 +344,16 @@ namespace library.GUI
             this.cerrarSesionToolStripMenuItem.Text = "Cerrar Sesion";
             this.cerrarSesionToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // dirDisplay
+            // emDisplay
             // 
-            this.dirDisplay.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.dirDisplay.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.dirDisplay.Location = new System.Drawing.Point(79, 216);
-            this.dirDisplay.Name = "dirDisplay";
-            this.dirDisplay.Size = new System.Drawing.Size(196, 20);
-            this.dirDisplay.TabIndex = 1;
-            this.dirDisplay.Text = "Pais";
-            this.dirDisplay.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.emDisplay.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.emDisplay.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.emDisplay.Location = new System.Drawing.Point(79, 216);
+            this.emDisplay.Name = "emDisplay";
+            this.emDisplay.Size = new System.Drawing.Size(196, 20);
+            this.emDisplay.TabIndex = 1;
+            this.emDisplay.Text = "Email";
+            this.emDisplay.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // usernameDisplay
             // 
@@ -545,7 +545,7 @@ namespace library.GUI
         private System.Windows.Forms.ToolStripMenuItem cienciasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem comicsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cuentoDeHadasToolStripMenuItem;
-        private System.Windows.Forms.Label dirDisplay;
+        private System.Windows.Forms.Label emDisplay;
         private System.Windows.Forms.ToolStripMenuItem historiaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem humorYEntretenimientoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem inicioToolStripMenuItem;

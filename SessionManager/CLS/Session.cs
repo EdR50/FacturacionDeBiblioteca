@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Data;
-using System.IO;
 
 namespace SessionManager.CLS
 {
     // Esta clase es el patron de diseño singleton
 
-    public sealed class Session
+    public sealed class Session 
     {
         private static Session _instance;
         private static readonly object Lock = new object();
@@ -28,8 +27,8 @@ namespace SessionManager.CLS
                     // Lock thread so only one thread can create the first instance
                     lock (Lock)
                     {
-                        // Check if instance needs to be created
-                        // This is to avoid initial initialization by two threads.
+                        // Mira si la instancia ha sido creada
+                        // Evita que dos hilos creen mas intancias
                         if (_instance is null)
                         {
                             _instance = new Session();
@@ -53,9 +52,10 @@ namespace SessionManager.CLS
 
                 if (table.Rows.Count == 1)
                 {
-                    IdUser = table.Rows[0]["IdUsuario"].ToString();
-                    Username = table.Rows[0]["NombreUsuario"].ToString();
-                    Password = table.Rows[0]["Contrasena"].ToString();
+                    Usuario.IdUsuario = table.Rows[0]["IdUsuario"].ToString();
+                    Usuario.NombreUsuario = table.Rows[0]["NombreUsuario"].ToString();
+                    Usuario.Contrasena = table.Rows[0]["Contrasena"].ToString();
+                    Usuario.Email = table.Rows[0]["Email"].ToString();
                     authorized = true;
                 }
                 else
@@ -72,11 +72,5 @@ namespace SessionManager.CLS
 
             return authorized;
         }
-
-
-        // Los getter y setter se inician aqui abajo.
-        public static string IdUser { get; private set; }
-        public static string Username { get; private set; }
-        public static string Password { get; private set; }
     }
 }

@@ -11,7 +11,7 @@ namespace CacheManager.CLS
             var queryHandler = new DataManager.CLS.Query(); // esta variable se encarga de instanciar la clase Query
 
             string sqlQuery =
-                $"SELECT IdUsuario, NombreUsuario, Contrasena from usuarios WHERE NombreUsuario='{username}' AND Contrasena = '{password}'";
+                $"SELECT IdUsuario, NombreUsuario, Contrasena, Email from usuarios WHERE NombreUsuario='{username}' AND Contrasena = '{password}'";
 
             try
             {
@@ -19,6 +19,7 @@ namespace CacheManager.CLS
             }
             catch (Exception e)
             {
+                Console.WriteLine(e);
                 table = new DataTable();
             }
 
@@ -31,7 +32,7 @@ namespace CacheManager.CLS
         {
             var table = new DataTable();
             var queryHandler = new DataManager.CLS.Query();
-            string sqlQuery = $"SELECT Idlibro, Titulo, Descripcion, Precio, Idioma, Cover FROM libros";
+            var sqlQuery = $"SELECT Idlibro, Titulo, Descripcion, Precio, Idioma, Cover FROM libros";
 
             try
             {
@@ -45,24 +46,6 @@ namespace CacheManager.CLS
 
             return table;
         }
-
-
-        public static DataTable UserInfo(string userName)
-        {
-            var table = new DataTable();
-            var sqlQuery = $"SELECT * FROM usuario WHERE NombreUsuario = '{userName}'";
-            var queryHandler = new DataManager.CLS.Query();
-
-            try
-            {
-                table = queryHandler.ExecuteSelectQuery(sqlQuery);
-            }
-            catch (Exception e)
-            {
-                table = new DataTable();
-            }
-
-            return table;
-        }
+        
     }
 }
