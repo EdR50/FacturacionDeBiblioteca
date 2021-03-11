@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data;
+using System.Windows.Forms;
 
 namespace CacheManager.CLS
 {
@@ -28,6 +29,8 @@ namespace CacheManager.CLS
 
 
         // Metodos del Home
+        
+        //Renderizar informacion de los libros en una lista
         public static DataTable RenderInfoBooks()
         {
             var table = new DataTable();
@@ -45,6 +48,13 @@ namespace CacheManager.CLS
             }
 
             return table;
+        }
+        
+        // Filtrar los datos de los libros (Barra de busqueda)
+        public static string FilterBookInfo(string word)
+        {
+            var sql =  $"Titulo like '%{word}%' OR Idioma like '%{word}%' OR Descripcion like '%{word}%'";
+            return sql;
         }
         
     }

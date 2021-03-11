@@ -387,6 +387,7 @@ namespace library.GUI
             this.searchBar.Name = "searchBar";
             this.searchBar.Size = new System.Drawing.Size(394, 42);
             this.searchBar.TabIndex = 6;
+            this.searchBar.TextChanged += new System.EventHandler(this.searchBar_TextChanged);
             // 
             // label1
             // 
@@ -456,7 +457,7 @@ namespace library.GUI
             // 
             this.libroDesc.DataPropertyName = "Descripcion";
             this.libroDesc.FillWeight = 17.76023F;
-            this.libroDesc.HeaderText = "Descripción";
+            this.libroDesc.HeaderText = "Descripcion";
             this.libroDesc.Name = "libroDesc";
             this.libroDesc.ReadOnly = true;
             // 
@@ -523,13 +524,14 @@ namespace library.GUI
         }
 
         private System.Windows.Forms.DataGridViewImageColumn cover;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn genero;
         private System.Windows.Forms.DataGridViewTextBoxColumn idioma;
         private System.Windows.Forms.DataGridViewTextBoxColumn IdLibro;
         private System.Windows.Forms.DataGridViewTextBoxColumn libroDesc;
         private System.Windows.Forms.DataGridViewTextBoxColumn precio;
         private System.Windows.Forms.DataGridViewTextBoxColumn titulo;
+
+        private System.Windows.Forms.DataGridView dataGridView1;
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
