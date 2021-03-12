@@ -1,15 +1,11 @@
 ﻿using System;
 using System.Windows.Forms;
-using SessionManager.CLS;
 
 namespace library.GUI
 {
     public partial class Login : Form
     {
-        //usuarios
-        private string _username;
-        private string _password;
-
+        
         private bool _validated;
 
         public bool Validated
@@ -28,7 +24,7 @@ namespace library.GUI
             try
             {
                 var initialSession = SessionManager.CLS.Session.Instance;
-                _validated = initialSession.Login(txtNom.Text, txtCon.Text);
+                _validated = initialSession.Login(txtNom.Text.Trim(), txtCon.Text.Trim());
                 if (_validated)
                 {
                     Close();

@@ -30,6 +30,7 @@ namespace library.GUI
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.MenuNav = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -67,11 +68,13 @@ namespace library.GUI
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.cover = new System.Windows.Forms.DataGridViewImageColumn();
             this.titulo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NombreAutor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.libroDesc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.genero = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idioma = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.IdLibro = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.disponible = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MenuNav.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize) (this.pictureBox8)).BeginInit();
@@ -382,7 +385,7 @@ namespace library.GUI
             this.searchBar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.searchBar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.searchBar.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.searchBar.Location = new System.Drawing.Point(737, 134);
+            this.searchBar.Location = new System.Drawing.Point(731, 116);
             this.searchBar.Multiline = true;
             this.searchBar.Name = "searchBar";
             this.searchBar.Size = new System.Drawing.Size(394, 42);
@@ -393,7 +396,7 @@ namespace library.GUI
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.label1.Location = new System.Drawing.Point(466, 150);
+            this.label1.Location = new System.Drawing.Point(476, 121);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(215, 37);
             this.label1.TabIndex = 7;
@@ -403,7 +406,7 @@ namespace library.GUI
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 27F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.label3.Location = new System.Drawing.Point(476, 49);
+            this.label3.Location = new System.Drawing.Point(476, 18);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(215, 46);
             this.label3.TabIndex = 5;
@@ -415,15 +418,15 @@ namespace library.GUI
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AllowUserToResizeColumns = false;
             this.dataGridView1.AllowUserToResizeRows = false;
-            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles) (((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int) (((byte) (247)))), ((int) (((byte) (247)))), ((int) (((byte) (247)))));
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {this.cover, this.titulo, this.libroDesc, this.genero, this.precio, this.idioma, this.IdLibro});
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {this.cover, this.titulo, this.NombreAutor, this.precio, this.libroDesc, this.genero, this.idioma, this.IdLibro, this.disponible});
             this.dataGridView1.GridColor = System.Drawing.Color.White;
-            this.dataGridView1.Location = new System.Drawing.Point(382, 251);
+            this.dataGridView1.Location = new System.Drawing.Point(382, 217);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
@@ -432,55 +435,69 @@ namespace library.GUI
             this.dataGridView1.RowTemplate.DividerHeight = 5;
             this.dataGridView1.RowTemplate.Height = 161;
             this.dataGridView1.RowTemplate.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(843, 573);
+            this.dataGridView1.Size = new System.Drawing.Size(850, 573);
             this.dataGridView1.TabIndex = 8;
             // 
             // cover
             // 
+            this.cover.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.cover.DataPropertyName = "Cover";
-            this.cover.FillWeight = 25.8571F;
+            this.cover.FillWeight = 39.62453F;
+            this.cover.Frozen = true;
             this.cover.HeaderText = "Portada";
             this.cover.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
             this.cover.MinimumWidth = 25;
             this.cover.Name = "cover";
             this.cover.ReadOnly = true;
+            this.cover.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.cover.Width = 144;
             // 
             // titulo
             // 
             this.titulo.DataPropertyName = "Titulo";
-            this.titulo.FillWeight = 17.76023F;
+            this.titulo.FillWeight = 24.30426F;
             this.titulo.HeaderText = "Titulo";
             this.titulo.Name = "titulo";
             this.titulo.ReadOnly = true;
             // 
+            // NombreAutor
+            // 
+            this.NombreAutor.DataPropertyName = "NombreAutor";
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.NombreAutor.DefaultCellStyle = dataGridViewCellStyle1;
+            this.NombreAutor.FillWeight = 27F;
+            this.NombreAutor.HeaderText = "Autor";
+            this.NombreAutor.Name = "NombreAutor";
+            this.NombreAutor.ReadOnly = true;
+            // 
+            // precio
+            // 
+            this.precio.DataPropertyName = "Precio";
+            this.precio.FillWeight = 24.30426F;
+            this.precio.HeaderText = "Precio";
+            this.precio.Name = "precio";
+            this.precio.ReadOnly = true;
+            // 
             // libroDesc
             // 
             this.libroDesc.DataPropertyName = "Descripcion";
-            this.libroDesc.FillWeight = 17.76023F;
+            this.libroDesc.FillWeight = 24.30426F;
             this.libroDesc.HeaderText = "Descripcion";
             this.libroDesc.Name = "libroDesc";
             this.libroDesc.ReadOnly = true;
             // 
             // genero
             // 
-            this.genero.DataPropertyName = "Genero";
-            this.genero.FillWeight = 17.76023F;
-            this.genero.HeaderText = "Genero";
+            this.genero.DataPropertyName = "NombreEditorial";
+            this.genero.FillWeight = 24.30426F;
+            this.genero.HeaderText = "Editorial";
             this.genero.Name = "genero";
             this.genero.ReadOnly = true;
-            // 
-            // precio
-            // 
-            this.precio.DataPropertyName = "Precio";
-            this.precio.FillWeight = 17.76023F;
-            this.precio.HeaderText = "Precio";
-            this.precio.Name = "precio";
-            this.precio.ReadOnly = true;
             // 
             // idioma
             // 
             this.idioma.DataPropertyName = "Idioma";
-            this.idioma.FillWeight = 17.76023F;
+            this.idioma.FillWeight = 24.30426F;
             this.idioma.HeaderText = "Idioma";
             this.idioma.Name = "idioma";
             this.idioma.ReadOnly = true;
@@ -488,10 +505,18 @@ namespace library.GUI
             // IdLibro
             // 
             this.IdLibro.DataPropertyName = "Idlibro";
-            this.IdLibro.FillWeight = 17.76023F;
+            this.IdLibro.FillWeight = 24.30426F;
             this.IdLibro.HeaderText = "ID Libro";
             this.IdLibro.Name = "IdLibro";
             this.IdLibro.ReadOnly = true;
+            // 
+            // disponible
+            // 
+            this.disponible.DataPropertyName = "stock";
+            this.disponible.FillWeight = 25F;
+            this.disponible.HeaderText = "Cantidad";
+            this.disponible.Name = "disponible";
+            this.disponible.ReadOnly = true;
             // 
             // Home
             // 
@@ -524,10 +549,12 @@ namespace library.GUI
         }
 
         private System.Windows.Forms.DataGridViewImageColumn cover;
+        private System.Windows.Forms.DataGridViewTextBoxColumn disponible;
         private System.Windows.Forms.DataGridViewTextBoxColumn genero;
         private System.Windows.Forms.DataGridViewTextBoxColumn idioma;
         private System.Windows.Forms.DataGridViewTextBoxColumn IdLibro;
         private System.Windows.Forms.DataGridViewTextBoxColumn libroDesc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NombreAutor;
         private System.Windows.Forms.DataGridViewTextBoxColumn precio;
         private System.Windows.Forms.DataGridViewTextBoxColumn titulo;
 

@@ -37,7 +37,7 @@ namespace library.GUI
             dataGridView1.DataSource = bookInfo;
         }
 
-        //Mostrar informacion del usuario actual en la sesion.
+        //Mostrar informacion del usuario actual en la sesion.\
         private void RenderUserInfo()
         {
             usernameDisplay.Text = SessionManager.CLS.Usuario.NombreUsuario;
