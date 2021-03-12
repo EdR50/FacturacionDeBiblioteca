@@ -28,16 +28,23 @@ namespace library.GUI
             var bookInfoManage = CacheManager.CLS.Cache.RenderInfoBooksManage();
 
 
-            // Mostrando los libros en la tabla
+            
             dg.AutoGenerateColumns = false;
             dg.DataSource = bookInfoManage;
         }
 
-        //Mostrar informacion del usuario actual en la sesion.
+        
         private void RenderUserInfoManage()
         {
             usernameDisplay.Text = SessionManager.CLS.Usuario.NombreUsuario;
             emDisplay.Text = SessionManager.CLS.Usuario.Email;
+        }
+
+        private void inicioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Home hm = new Home();
+            hm.Show();
+            this.Close();
         }
     }
 }

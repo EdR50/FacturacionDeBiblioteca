@@ -52,7 +52,12 @@ namespace library.GUI
             bs.Filter =  CacheManager.CLS.Cache.FilterBookInfo(searchBar.Text);;  // usamos el metodo filter que recibe una query SQL
             dataGridView1.DataSource = bs;
         }
-        
-        
+
+        private void accionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Manage ma = new Manage();
+            ma.Show();
+            this.Close();
+        }
     }
 }

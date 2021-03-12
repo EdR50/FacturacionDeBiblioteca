@@ -31,7 +31,9 @@ namespace library.GUI
                 }
                 else
                 {
-                    Console.WriteLine(@"Error en el usuario");
+                    lble.Text = "Usuario o contraseña incorrecta";
+                    txtNom.Text = "";
+                    txtCon.Text = "";
                 }
             }
             catch (Exception e)

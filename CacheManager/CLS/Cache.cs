@@ -59,6 +59,25 @@ namespace CacheManager.CLS
             return table;
         }
 
+        public static DataTable RenderInfoBooksManage()
+        {
+            var table = new DataTable();
+            var queryHandler = new DataManager.CLS.Query();
+            var sqlQuery = $"SELECT Idlibro, Titulo, Descripcion, Precio, Idioma, Cover FROM libros";
+
+            try
+            {
+                table = queryHandler.ExecuteSelectQuery(sqlQuery);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
+
+            return table;
+        }
+
         // Filtrar los datos de los libros (Barra de busqueda)
         public static string FilterBookInfo(string word)
         {

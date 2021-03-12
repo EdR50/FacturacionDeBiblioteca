@@ -223,6 +223,7 @@ namespace library.GUI
             this.inicioToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.inicioToolStripMenuItem.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
             this.inicioToolStripMenuItem.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.inicioToolStripMenuItem.Click += new System.EventHandler(this.inicioToolStripMenuItem_Click);
             // 
             // accionesToolStripMenuItem
             // 
@@ -606,6 +607,7 @@ namespace library.GUI
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Manage";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Manage";
             this.Load += new System.EventHandler(this.Manage_Load);
             this.panel1.ResumeLayout(false);
