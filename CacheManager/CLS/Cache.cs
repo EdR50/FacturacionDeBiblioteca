@@ -29,7 +29,6 @@ namespace CacheManager.CLS
 
 
         // Metodos del Home
-
         //Renderizar informacion de los libros en una lista
         public static DataTable RenderInfoBooks()
         {
