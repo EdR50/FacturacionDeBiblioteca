@@ -35,16 +35,20 @@ namespace CacheManager.CLS
         {
             var table = new DataTable();
             var queryHandler = new DataManager.CLS.Query();
-            // var sqlQuery = $"SELECT  a.Idlibro, a.Titulo, a.Descripcion, b.NombreEditorial , a.Precio, a.Idioma, a.Cover from libros a, editoriales b, libros_editoriales c where a.Idlibro = c.IdLibro and b.IdEditorial = c.IdEditorial";
 
+            // lo que hace esta sentencia sql es mostrar los libros usando diferentes tablas
+            
             var sqlQuery =
                 "select " +
-                "t1.Idlibro, Isbn, Titulo, Descripcion, Precio, Idioma, FechaLanzamiento, NumeroPag, Cover, stock, concat(NombreAutor , ' ' , ApellidoAutor) as NombreAutor, ApellidoAutor, NombreEditorial " +
+                "t1.Idlibro, Isbn, Titulo, Descripcion, Precio, Idioma, FechaLanzamiento, NumeroPag, Cover, stock, concat(NombreAutor , ' ' , ApellidoAutor) as NombreAutor, NombreEditorial, " 
+                + "t2.nombrecategoria " +
                 "from libros t1 " +
                 "inner join libros_autores la on t1.Idlibro = la.IdLibro " +
                 "inner join autores a on la.IdAutor = a.IdAutor " +
                 "inner join libros_editoriales le on t1.Idlibro = le.IdLibro " +
-                "inner join editoriales e on le.IdEditorial = e.IdEditorial;";
+                "inner join editoriales e on le.IdEditorial = e.IdEditorial " +
+                "inner join libros_categorias cl on t1.Idlibro = cl.Idlibros " +
+                "inner join categorias t2 on cl.idcategorias = t2.idcategorias;";
 
             try
             {
@@ -81,7 +85,8 @@ namespace CacheManager.CLS
         // Filtrar los datos de los libros (Barra de busqueda)
         public static string FilterBookInfo(string word)
         {
-            var sql = $"Titulo like '%{word}%' OR Idioma like '%{word}%' OR Descripcion like '%{word}%' OR NombreAutor like '%{word}%'";
+            var sql = $"Titulo like '%{word}%' OR Idioma like '%{word}%' OR Descripcion like '%{word}%' OR NombreAutor like '%{word}%' OR nombrecategoria like '%{word}%'  " +
+                      $" OR NombreEditorial like '%{word}%'";
             return sql;
         }
     }

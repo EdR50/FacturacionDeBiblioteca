@@ -30,7 +30,7 @@ namespace library.GUI
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.MenuNav = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -75,25 +75,25 @@ namespace library.GUI
             this.idioma = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.IdLibro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.disponible = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Categorias = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MenuNav.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.pictureBox2)).BeginInit();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // MenuNav
             // 
-            this.MenuNav.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.MenuNav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
+            this.MenuNav.Anchor = ((System.Windows.Forms.AnchorStyles) (((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left)));
+            this.MenuNav.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (247)))), ((int) (((byte) (247)))), ((int) (((byte) (247)))));
             this.MenuNav.Controls.Add(this.panel2);
             this.MenuNav.Controls.Add(this.panel1);
             this.MenuNav.Controls.Add(this.emDisplay);
@@ -128,7 +128,7 @@ namespace library.GUI
             // 
             // pictureBox8
             // 
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.Image = ((System.Drawing.Image) (resources.GetObject("pictureBox8.Image")));
             this.pictureBox8.Location = new System.Drawing.Point(239, 282);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(45, 30);
@@ -138,7 +138,7 @@ namespace library.GUI
             // 
             // pictureBox7
             // 
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Image = ((System.Drawing.Image) (resources.GetObject("pictureBox7.Image")));
             this.pictureBox7.Location = new System.Drawing.Point(239, 236);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(45, 30);
@@ -148,7 +148,7 @@ namespace library.GUI
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Image = ((System.Drawing.Image) (resources.GetObject("pictureBox6.Image")));
             this.pictureBox6.Location = new System.Drawing.Point(239, 189);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(45, 30);
@@ -158,7 +158,7 @@ namespace library.GUI
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Image = ((System.Drawing.Image) (resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.Location = new System.Drawing.Point(239, 143);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(45, 30);
@@ -168,7 +168,7 @@ namespace library.GUI
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Image = ((System.Drawing.Image) (resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(239, 93);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(45, 30);
@@ -178,7 +178,7 @@ namespace library.GUI
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Image = ((System.Drawing.Image) (resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(239, 48);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(45, 30);
@@ -188,7 +188,7 @@ namespace library.GUI
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Image = ((System.Drawing.Image) (resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(239, 3);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(45, 30);
@@ -202,14 +202,7 @@ namespace library.GUI
             this.menuStrip1.BackColor = System.Drawing.Color.Transparent;
             this.menuStrip1.Dock = System.Windows.Forms.DockStyle.Left;
             this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 18F);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.inicioToolStripMenuItem,
-            this.accionesToolStripMenuItem,
-            this.categoriasToolStripMenuItem,
-            this.transaccionToolStripMenuItem,
-            this.perfilToolStripMenuItem,
-            this.acercaDeToolStripMenuItem,
-            this.cerrarSesionToolStripMenuItem});
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {this.inicioToolStripMenuItem, this.accionesToolStripMenuItem, this.categoriasToolStripMenuItem, this.transaccionToolStripMenuItem, this.perfilToolStripMenuItem, this.acercaDeToolStripMenuItem, this.cerrarSesionToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(226, 399);
@@ -240,17 +233,7 @@ namespace library.GUI
             // 
             // categoriasToolStripMenuItem
             // 
-            this.categoriasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aventuraToolStripMenuItem,
-            this.accionToolStripMenuItem,
-            this.cienciaFiccionToolStripMenuItem,
-            this.cuentoDeHadasToolStripMenuItem,
-            this.cienciasToolStripMenuItem,
-            this.comicsToolStripMenuItem,
-            this.humorYEntretenimientoToolStripMenuItem,
-            this.historiaToolStripMenuItem,
-            this.programacionToolStripMenuItem,
-            this.romanceToolStripMenuItem});
+            this.categoriasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {this.aventuraToolStripMenuItem, this.accionToolStripMenuItem, this.cienciaFiccionToolStripMenuItem, this.cuentoDeHadasToolStripMenuItem, this.cienciasToolStripMenuItem, this.comicsToolStripMenuItem, this.humorYEntretenimientoToolStripMenuItem, this.historiaToolStripMenuItem, this.programacionToolStripMenuItem, this.romanceToolStripMenuItem});
             this.categoriasToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.categoriasToolStripMenuItem.Margin = new System.Windows.Forms.Padding(0, 0, 0, 10);
             this.categoriasToolStripMenuItem.Name = "categoriasToolStripMenuItem";
@@ -264,70 +247,70 @@ namespace library.GUI
             // 
             this.aventuraToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 14F);
             this.aventuraToolStripMenuItem.Name = "aventuraToolStripMenuItem";
-            this.aventuraToolStripMenuItem.Size = new System.Drawing.Size(299, 30);
+            this.aventuraToolStripMenuItem.Size = new System.Drawing.Size(298, 30);
             this.aventuraToolStripMenuItem.Text = "Aventura";
             // 
             // accionToolStripMenuItem
             // 
             this.accionToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 14F);
             this.accionToolStripMenuItem.Name = "accionToolStripMenuItem";
-            this.accionToolStripMenuItem.Size = new System.Drawing.Size(299, 30);
+            this.accionToolStripMenuItem.Size = new System.Drawing.Size(298, 30);
             this.accionToolStripMenuItem.Text = "Accion";
             // 
             // cienciaFiccionToolStripMenuItem
             // 
             this.cienciaFiccionToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 14F);
             this.cienciaFiccionToolStripMenuItem.Name = "cienciaFiccionToolStripMenuItem";
-            this.cienciaFiccionToolStripMenuItem.Size = new System.Drawing.Size(299, 30);
+            this.cienciaFiccionToolStripMenuItem.Size = new System.Drawing.Size(298, 30);
             this.cienciaFiccionToolStripMenuItem.Text = "Ciencia Ficcion";
             // 
             // cuentoDeHadasToolStripMenuItem
             // 
             this.cuentoDeHadasToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 14F);
             this.cuentoDeHadasToolStripMenuItem.Name = "cuentoDeHadasToolStripMenuItem";
-            this.cuentoDeHadasToolStripMenuItem.Size = new System.Drawing.Size(299, 30);
+            this.cuentoDeHadasToolStripMenuItem.Size = new System.Drawing.Size(298, 30);
             this.cuentoDeHadasToolStripMenuItem.Text = "Cuento de Hadas";
             // 
             // cienciasToolStripMenuItem
             // 
             this.cienciasToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 14F);
             this.cienciasToolStripMenuItem.Name = "cienciasToolStripMenuItem";
-            this.cienciasToolStripMenuItem.Size = new System.Drawing.Size(299, 30);
+            this.cienciasToolStripMenuItem.Size = new System.Drawing.Size(298, 30);
             this.cienciasToolStripMenuItem.Text = "Ciencias";
             // 
             // comicsToolStripMenuItem
             // 
             this.comicsToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 14F);
             this.comicsToolStripMenuItem.Name = "comicsToolStripMenuItem";
-            this.comicsToolStripMenuItem.Size = new System.Drawing.Size(299, 30);
+            this.comicsToolStripMenuItem.Size = new System.Drawing.Size(298, 30);
             this.comicsToolStripMenuItem.Text = "Comics";
             // 
             // humorYEntretenimientoToolStripMenuItem
             // 
             this.humorYEntretenimientoToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 14F);
             this.humorYEntretenimientoToolStripMenuItem.Name = "humorYEntretenimientoToolStripMenuItem";
-            this.humorYEntretenimientoToolStripMenuItem.Size = new System.Drawing.Size(299, 30);
+            this.humorYEntretenimientoToolStripMenuItem.Size = new System.Drawing.Size(298, 30);
             this.humorYEntretenimientoToolStripMenuItem.Text = "Humor y Entretenimiento";
             // 
             // historiaToolStripMenuItem
             // 
             this.historiaToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 14F);
             this.historiaToolStripMenuItem.Name = "historiaToolStripMenuItem";
-            this.historiaToolStripMenuItem.Size = new System.Drawing.Size(299, 30);
+            this.historiaToolStripMenuItem.Size = new System.Drawing.Size(298, 30);
             this.historiaToolStripMenuItem.Text = "Historia";
             // 
             // programacionToolStripMenuItem
             // 
             this.programacionToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 14F);
             this.programacionToolStripMenuItem.Name = "programacionToolStripMenuItem";
-            this.programacionToolStripMenuItem.Size = new System.Drawing.Size(299, 30);
+            this.programacionToolStripMenuItem.Size = new System.Drawing.Size(298, 30);
             this.programacionToolStripMenuItem.Text = "Programacion";
             // 
             // romanceToolStripMenuItem
             // 
             this.romanceToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 14F);
             this.romanceToolStripMenuItem.Name = "romanceToolStripMenuItem";
-            this.romanceToolStripMenuItem.Size = new System.Drawing.Size(299, 30);
+            this.romanceToolStripMenuItem.Size = new System.Drawing.Size(298, 30);
             this.romanceToolStripMenuItem.Text = "Romance";
             // 
             // transaccionToolStripMenuItem
@@ -368,7 +351,7 @@ namespace library.GUI
             // 
             // emDisplay
             // 
-            this.emDisplay.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emDisplay.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.emDisplay.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.emDisplay.Location = new System.Drawing.Point(79, 216);
             this.emDisplay.Name = "emDisplay";
@@ -379,7 +362,7 @@ namespace library.GUI
             // 
             // usernameDisplay
             // 
-            this.usernameDisplay.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernameDisplay.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.usernameDisplay.Location = new System.Drawing.Point(79, 178);
             this.usernameDisplay.Name = "usernameDisplay";
             this.usernameDisplay.Size = new System.Drawing.Size(196, 38);
@@ -390,7 +373,7 @@ namespace library.GUI
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Image = ((System.Drawing.Image) (resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(146, 115);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(60, 60);
@@ -402,7 +385,7 @@ namespace library.GUI
             // 
             this.searchBar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.searchBar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.searchBar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchBar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.searchBar.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.searchBar.Location = new System.Drawing.Point(731, 78);
             this.searchBar.Multiline = true;
@@ -414,7 +397,7 @@ namespace library.GUI
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label1.Location = new System.Drawing.Point(476, 83);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(215, 37);
@@ -424,8 +407,8 @@ namespace library.GUI
             // label3
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 27F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(476, -20);
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 27F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.label3.Location = new System.Drawing.Point(476, 9);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(215, 46);
             this.label3.TabIndex = 5;
@@ -437,23 +420,13 @@ namespace library.GUI
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AllowUserToResizeColumns = false;
             this.dataGridView1.AllowUserToResizeRows = false;
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles) (((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int) (((byte) (247)))), ((int) (((byte) (247)))), ((int) (((byte) (247)))));
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.cover,
-            this.titulo,
-            this.NombreAutor,
-            this.precio,
-            this.libroDesc,
-            this.genero,
-            this.idioma,
-            this.IdLibro,
-            this.disponible});
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {this.cover, this.titulo, this.NombreAutor, this.precio, this.libroDesc, this.genero, this.idioma, this.IdLibro, this.disponible, this.Categorias});
             this.dataGridView1.GridColor = System.Drawing.Color.White;
             this.dataGridView1.Location = new System.Drawing.Point(382, 142);
             this.dataGridView1.Name = "dataGridView1";
@@ -484,7 +457,7 @@ namespace library.GUI
             // titulo
             // 
             this.titulo.DataPropertyName = "Titulo";
-            this.titulo.FillWeight = 24.30426F;
+            this.titulo.FillWeight = 22.97895F;
             this.titulo.HeaderText = "Titulo";
             this.titulo.Name = "titulo";
             this.titulo.ReadOnly = true;
@@ -492,9 +465,9 @@ namespace library.GUI
             // NombreAutor
             // 
             this.NombreAutor.DataPropertyName = "NombreAutor";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.NombreAutor.DefaultCellStyle = dataGridViewCellStyle3;
-            this.NombreAutor.FillWeight = 27F;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.NombreAutor.DefaultCellStyle = dataGridViewCellStyle1;
+            this.NombreAutor.FillWeight = 25.52769F;
             this.NombreAutor.HeaderText = "Autor";
             this.NombreAutor.Name = "NombreAutor";
             this.NombreAutor.ReadOnly = true;
@@ -502,7 +475,7 @@ namespace library.GUI
             // precio
             // 
             this.precio.DataPropertyName = "Precio";
-            this.precio.FillWeight = 24.30426F;
+            this.precio.FillWeight = 22.97895F;
             this.precio.HeaderText = "Precio";
             this.precio.Name = "precio";
             this.precio.ReadOnly = true;
@@ -510,7 +483,7 @@ namespace library.GUI
             // libroDesc
             // 
             this.libroDesc.DataPropertyName = "Descripcion";
-            this.libroDesc.FillWeight = 24.30426F;
+            this.libroDesc.FillWeight = 22.97895F;
             this.libroDesc.HeaderText = "Descripcion";
             this.libroDesc.Name = "libroDesc";
             this.libroDesc.ReadOnly = true;
@@ -518,7 +491,7 @@ namespace library.GUI
             // genero
             // 
             this.genero.DataPropertyName = "NombreEditorial";
-            this.genero.FillWeight = 24.30426F;
+            this.genero.FillWeight = 22.97895F;
             this.genero.HeaderText = "Editorial";
             this.genero.Name = "genero";
             this.genero.ReadOnly = true;
@@ -526,7 +499,7 @@ namespace library.GUI
             // idioma
             // 
             this.idioma.DataPropertyName = "Idioma";
-            this.idioma.FillWeight = 24.30426F;
+            this.idioma.FillWeight = 22.97895F;
             this.idioma.HeaderText = "Idioma";
             this.idioma.Name = "idioma";
             this.idioma.ReadOnly = true;
@@ -534,7 +507,7 @@ namespace library.GUI
             // IdLibro
             // 
             this.IdLibro.DataPropertyName = "Idlibro";
-            this.IdLibro.FillWeight = 24.30426F;
+            this.IdLibro.FillWeight = 22.97895F;
             this.IdLibro.HeaderText = "ID Libro";
             this.IdLibro.Name = "IdLibro";
             this.IdLibro.ReadOnly = true;
@@ -542,10 +515,18 @@ namespace library.GUI
             // disponible
             // 
             this.disponible.DataPropertyName = "stock";
-            this.disponible.FillWeight = 25F;
+            this.disponible.FillWeight = 23.63675F;
             this.disponible.HeaderText = "Cantidad";
             this.disponible.Name = "disponible";
             this.disponible.ReadOnly = true;
+            // 
+            // Categorias
+            // 
+            this.Categorias.DataPropertyName = "nombrecategoria";
+            this.Categorias.FillWeight = 25F;
+            this.Categorias.HeaderText = "Categorias";
+            this.Categorias.Name = "Categorias";
+            this.Categorias.ReadOnly = true;
             // 
             // Home
             // 
@@ -557,29 +538,29 @@ namespace library.GUI
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.MenuNav);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Icon = ((System.Drawing.Icon) (resources.GetObject("$this.Icon")));
             this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
             this.Load += new System.EventHandler(this.Home_Load);
             this.MenuNav.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.pictureBox2)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
+        private System.Windows.Forms.DataGridViewTextBoxColumn Categorias;
         private System.Windows.Forms.DataGridViewImageColumn cover;
         private System.Windows.Forms.DataGridViewTextBoxColumn disponible;
         private System.Windows.Forms.DataGridViewTextBoxColumn genero;
