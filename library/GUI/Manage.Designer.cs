@@ -65,21 +65,26 @@ namespace library.GUI
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.dg = new System.Windows.Forms.DataGridView();
-            this.Cover = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Titulo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Categorias = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Idioma = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IdLibro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Cover = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Titulo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.autores = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Editorial = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Categorias = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Idioma = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IdLibro = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -118,7 +123,7 @@ namespace library.GUI
             this.panel2.Controls.Add(this.pictureBox3);
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.menuStrip1);
-            this.panel2.Location = new System.Drawing.Point(3, 277);
+            this.panel2.Location = new System.Drawing.Point(3, 340);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(335, 399);
             this.panel2.TabIndex = 6;
@@ -415,16 +420,21 @@ namespace library.GUI
             // 
             // toolStrip1
             // 
+            this.toolStrip1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.toolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton1,
             this.toolStripLabel1,
+            this.toolStripSeparator1,
             this.toolStripButton2,
             this.toolStripLabel2,
+            this.toolStripSeparator2,
             this.toolStripButton3,
             this.toolStripLabel3});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(883, 25);
+            this.toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
+            this.toolStrip1.Size = new System.Drawing.Size(883, 27);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -434,14 +444,19 @@ namespace library.GUI
             this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton1.Size = new System.Drawing.Size(23, 24);
             this.toolStripButton1.Text = "Add";
             // 
             // toolStripLabel1
             // 
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(114, 22);
+            this.toolStripLabel1.Size = new System.Drawing.Size(114, 24);
             this.toolStripLabel1.Text = "Insertar Nuevo Libro";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
             // toolStripButton2
             // 
@@ -449,14 +464,19 @@ namespace library.GUI
             this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton2.Size = new System.Drawing.Size(23, 24);
             this.toolStripButton2.Text = "Update";
             // 
             // toolStripLabel2
             // 
             this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(176, 22);
+            this.toolStripLabel2.Size = new System.Drawing.Size(176, 24);
             this.toolStripLabel2.Text = "Actualizar Informacion del Libro";
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 27);
             // 
             // toolStripButton3
             // 
@@ -464,13 +484,13 @@ namespace library.GUI
             this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
             this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton3.Size = new System.Drawing.Size(23, 24);
             this.toolStripButton3.Text = "Delete";
             // 
             // toolStripLabel3
             // 
             this.toolStripLabel3.Name = "toolStripLabel3";
-            this.toolStripLabel3.Size = new System.Drawing.Size(77, 22);
+            this.toolStripLabel3.Size = new System.Drawing.Size(77, 24);
             this.toolStripLabel3.Text = "Eliminar libro";
             // 
             // panel4
@@ -495,11 +515,14 @@ namespace library.GUI
             this.dg.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Cover,
             this.Titulo,
-            this.Descripcion,
-            this.Categorias,
+            this.autores,
             this.Precio,
+            this.Descripcion,
+            this.Editorial,
+            this.Categorias,
             this.Idioma,
-            this.IdLibro});
+            this.IdLibro,
+            this.Cantidad});
             this.dg.GridColor = System.Drawing.Color.White;
             this.dg.Location = new System.Drawing.Point(0, 0);
             this.dg.Name = "dg";
@@ -507,75 +530,11 @@ namespace library.GUI
             this.dg.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dg.RowHeadersVisible = false;
             this.dg.RowHeadersWidth = 50;
-            this.dg.Size = new System.Drawing.Size(878, 656);
+            this.dg.RowTemplate.DividerHeight = 5;
+            this.dg.RowTemplate.Height = 161;
+            this.dg.RowTemplate.ReadOnly = true;
+            this.dg.Size = new System.Drawing.Size(880, 573);
             this.dg.TabIndex = 8;
-            // 
-            // Cover
-            // 
-            this.Cover.DataPropertyName = "Cover";
-            this.Cover.FillWeight = 23.72914F;
-            this.Cover.HeaderText = "Portada";
-            this.Cover.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
-            this.Cover.MinimumWidth = 25;
-            this.Cover.Name = "Cover";
-            this.Cover.ReadOnly = true;
-            this.Cover.Width = 50;
-            // 
-            // Titulo
-            // 
-            this.Titulo.DataPropertyName = "Titulo";
-            this.Titulo.FillWeight = 38.06453F;
-            this.Titulo.HeaderText = "Titulo";
-            this.Titulo.Name = "Titulo";
-            this.Titulo.ReadOnly = true;
-            this.Titulo.Width = 58;
-            // 
-            // Descripcion
-            // 
-            this.Descripcion.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Descripcion.DataPropertyName = "Descripcion";
-            this.Descripcion.FillWeight = 25F;
-            this.Descripcion.HeaderText = "Descripcion";
-            this.Descripcion.Name = "Descripcion";
-            this.Descripcion.ReadOnly = true;
-            this.Descripcion.Width = 5;
-            // 
-            // Categorias
-            // 
-            this.Categorias.DataPropertyName = "Catrgorias";
-            this.Categorias.FillWeight = 0.103347F;
-            this.Categorias.HeaderText = "Categorias";
-            this.Categorias.Name = "Categorias";
-            this.Categorias.ReadOnly = true;
-            this.Categorias.Width = 82;
-            // 
-            // Precio
-            // 
-            this.Precio.DataPropertyName = "Precio";
-            this.Precio.FillWeight = 0.0002466705F;
-            this.Precio.HeaderText = "Precio";
-            this.Precio.Name = "Precio";
-            this.Precio.ReadOnly = true;
-            this.Precio.Width = 62;
-            // 
-            // Idioma
-            // 
-            this.Idioma.DataPropertyName = "Idioma";
-            this.Idioma.FillWeight = 1.775805F;
-            this.Idioma.HeaderText = "Idioma";
-            this.Idioma.Name = "Idioma";
-            this.Idioma.ReadOnly = true;
-            this.Idioma.Width = 63;
-            // 
-            // IdLibro
-            // 
-            this.IdLibro.DataPropertyName = "IdLibro";
-            this.IdLibro.FillWeight = 1.002945F;
-            this.IdLibro.HeaderText = "IdLibro";
-            this.IdLibro.Name = "IdLibro";
-            this.IdLibro.ReadOnly = true;
-            this.IdLibro.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.IdLibro.Width = 64;
             // 
             // label2
             // 
@@ -593,6 +552,98 @@ namespace library.GUI
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(226, 20);
             this.textBox1.TabIndex = 5;
+            // 
+            // Cover
+            // 
+            this.Cover.DataPropertyName = "Cover";
+            this.Cover.FillWeight = 23.72914F;
+            this.Cover.Frozen = true;
+            this.Cover.HeaderText = "Portada";
+            this.Cover.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
+            this.Cover.MinimumWidth = 25;
+            this.Cover.Name = "Cover";
+            this.Cover.ReadOnly = true;
+            this.Cover.Width = 144;
+            // 
+            // Titulo
+            // 
+            this.Titulo.DataPropertyName = "Titulo";
+            this.Titulo.FillWeight = 38.06453F;
+            this.Titulo.HeaderText = "Titulo";
+            this.Titulo.Name = "Titulo";
+            this.Titulo.ReadOnly = true;
+            this.Titulo.Width = 83;
+            // 
+            // autores
+            // 
+            this.autores.DataPropertyName = "NombreAutor";
+            this.autores.HeaderText = "Autores";
+            this.autores.Name = "autores";
+            this.autores.ReadOnly = true;
+            this.autores.Width = 96;
+            // 
+            // Precio
+            // 
+            this.Precio.DataPropertyName = "Precio";
+            this.Precio.FillWeight = 0.0002466705F;
+            this.Precio.HeaderText = "Precio";
+            this.Precio.Name = "Precio";
+            this.Precio.ReadOnly = true;
+            this.Precio.Width = 86;
+            // 
+            // Descripcion
+            // 
+            this.Descripcion.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Descripcion.DataPropertyName = "Descripcion";
+            this.Descripcion.FillWeight = 25F;
+            this.Descripcion.HeaderText = "Descripcion";
+            this.Descripcion.Name = "Descripcion";
+            this.Descripcion.ReadOnly = true;
+            this.Descripcion.Width = 87;
+            // 
+            // Editorial
+            // 
+            this.Editorial.DataPropertyName = "NombreEditorial";
+            this.Editorial.HeaderText = "Editorial";
+            this.Editorial.Name = "Editorial";
+            this.Editorial.ReadOnly = true;
+            this.Editorial.Width = 87;
+            // 
+            // Categorias
+            // 
+            this.Categorias.DataPropertyName = "Catrgorias";
+            this.Categorias.FillWeight = 0.103347F;
+            this.Categorias.HeaderText = "Categorias";
+            this.Categorias.Name = "Categorias";
+            this.Categorias.ReadOnly = true;
+            this.Categorias.Width = 86;
+            // 
+            // Idioma
+            // 
+            this.Idioma.DataPropertyName = "Idioma";
+            this.Idioma.FillWeight = 1.775805F;
+            this.Idioma.HeaderText = "Idioma";
+            this.Idioma.Name = "Idioma";
+            this.Idioma.ReadOnly = true;
+            this.Idioma.Width = 86;
+            // 
+            // IdLibro
+            // 
+            this.IdLibro.DataPropertyName = "IdLibro";
+            this.IdLibro.FillWeight = 1.002945F;
+            this.IdLibro.HeaderText = "IdLibro";
+            this.IdLibro.Name = "IdLibro";
+            this.IdLibro.ReadOnly = true;
+            this.IdLibro.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.IdLibro.Width = 45;
+            // 
+            // Cantidad
+            // 
+            this.Cantidad.DataPropertyName = "stock";
+            this.Cantidad.HeaderText = "Cantidad";
+            this.Cantidad.Name = "Cantidad";
+            this.Cantidad.ReadOnly = true;
+            this.Cantidad.Width = 50;
             // 
             // Manage
             // 
@@ -668,7 +719,6 @@ namespace library.GUI
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
         private System.Windows.Forms.ToolStripButton toolStripButton2;
         private System.Windows.Forms.ToolStripLabel toolStripLabel2;
@@ -676,14 +726,20 @@ namespace library.GUI
         private System.Windows.Forms.ToolStripLabel toolStripLabel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.DataGridView dg;
-        private System.Windows.Forms.DataGridViewImageColumn Cover;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Titulo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Descripcion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Categorias;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Precio;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Idioma;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IdLibro;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.DataGridViewImageColumn Cover;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Titulo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn autores;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Precio;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Descripcion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Editorial;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Categorias;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Idioma;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IdLibro;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
     }
 }

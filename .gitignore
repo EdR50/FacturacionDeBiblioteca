@@ -25,3 +25,5 @@ msbuild.wrn
 CacheManager/bin/Debug/
 
 library/obj/Debug/
+
+library/bin/Debug/

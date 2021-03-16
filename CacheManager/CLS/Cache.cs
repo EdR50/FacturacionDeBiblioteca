@@ -63,7 +63,13 @@ namespace CacheManager.CLS
         {
             var table = new DataTable();
             var queryHandler = new DataManager.CLS.Query();
-            var sqlQuery = $"SELECT Idlibro, Titulo, Descripcion, Precio, Idioma, Cover FROM libros";
+            var sqlQuery = "select " +
+                "t1.Idlibro, Isbn, Titulo, Descripcion, Precio, Idioma, FechaLanzamiento, NumeroPag, Cover, stock, concat(NombreAutor , ' ' , ApellidoAutor) as NombreAutor, ApellidoAutor, NombreEditorial " +
+                "from libros t1 " +
+                "inner join libros_autores la on t1.Idlibro = la.IdLibro " +
+                "inner join autores a on la.IdAutor = a.IdAutor " +
+                "inner join libros_editoriales le on t1.Idlibro = le.IdLibro " +
+                "inner join editoriales e on le.IdEditorial = e.IdEditorial;";
 
             try
             {
@@ -75,6 +81,23 @@ namespace CacheManager.CLS
                 throw;
             }
 
+            return table;
+        }
+
+        public static DataTable InsertBooks()
+        {
+            var table = new DataTable();
+            var queryHandler = new DataManager.CLS.Query();
+            var sqlQuery = "insert into libros(Isbn,Titulo,Descripcion,Precio, Idioma,FechaLanzamiento,NumeroPag,Cover,stock) value()";
+
+            try
+            {
+                //table = queryHandler.Insert(sqlQuery);
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e);
+            }
             return table;
         }
 
